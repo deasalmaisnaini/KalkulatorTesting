@@ -1,14 +1,16 @@
 package kalkulator;
 
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
 public class MainApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        DecimalFormat df = new DecimalFormat("#.##");
+        DecimalFormat df = new DecimalFormat("#.######");
 
         try {
+        	System.out.print("[ -------------------- Program Kalkulator -------------------- ]\n");
             System.out.print("Masukkan operand pertama: ");
             double operand1 = scanner.nextDouble();
             Validator.validateOperand(operand1);
@@ -24,6 +26,7 @@ public class MainApp {
 
             double result = Computation.compute(operand1, operand2, operator);
             System.out.println("Hasil: " + df.format(result));
+       
         } catch (Exception e) {
         	if (e.getMessage() == null) {
         		System.out.println("Operand harus berupa angka");

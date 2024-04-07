@@ -1,6 +1,9 @@
 package kalkulator;
 
 import static org.junit.Assert.*;
+
+import java.io.ByteArrayInputStream;
+
 import org.junit.Test;
 
 public class CalculatorTest {
@@ -8,9 +11,9 @@ public class CalculatorTest {
 	 @Test
 	    public void testValidateOperand() {
 	        try {
-	            Validator.validateOperand(5);  // Operand valid
+	            Validator.validateOperator('\n');  // Operand valid
 	        } catch (IllegalArgumentException e) {
-	            fail("Exception not expected");
+	            assertEquals("Operand 1 harus berada dalam range -32,768 hingga 32,767", e.getMessage());
 	        }
 
 	        try {
@@ -29,4 +32,8 @@ public class CalculatorTest {
         assertEquals(25, Computation.compute(5, 5, '*'), 0.00001);  // Perkalian
 
     }
+    
+       
+    
+
 }
