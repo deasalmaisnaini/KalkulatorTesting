@@ -13,7 +13,9 @@ public class Computation {
             hasil = Calculator.multiply(operand1, operand2);
         } else if (operator == '/') {
             hasil =  Calculator.divide(operand1, operand2);
-        } 
+        } else {
+            throw new IllegalArgumentException("Operator tidak valid: " + operator);
+        }
         return hasil;
     }
 }

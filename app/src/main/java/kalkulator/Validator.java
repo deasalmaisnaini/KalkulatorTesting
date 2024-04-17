@@ -16,7 +16,7 @@ public class Validator {
     }
 
     public static void validateInput(String input, String fieldName) {
-    	 if (input == null || input.trim().isEmpty() || input.trim().matches("\\s+")) {
+    	 if (input.trim().isEmpty()) {
              throw new IllegalArgumentException(fieldName + " harus diisi");
          }
     }

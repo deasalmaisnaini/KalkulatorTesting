@@ -40,11 +40,14 @@ tasks.register("author") {
     }
 }
 
+
 jacocoTestReport {
     reports {
         xml.enabled true
         html.enabled true
     }
+    
+    
   
 }
 

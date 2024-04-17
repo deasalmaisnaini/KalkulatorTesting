@@ -33,7 +33,7 @@ public class MainApp {
             System.out.println("Hasil: " + df.format(result));
        
         } catch (NumberFormatException e) {
-            System.out.println("Operand harus berupa angka");
+            System.out.println("Error: Operand harus berupa angka");
         } catch (IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());
         } finally {
