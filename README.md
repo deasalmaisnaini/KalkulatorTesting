@@ -31,3 +31,14 @@ Pengujian dilakukan per-method dengan daftar item uji sebagai berikut:
 |   |         | validateInput |
 | 4 | Computation | compute |
 
+
+## Script for testing
+1. Jacoco
+```
+./gradlew test jacocoTestReport
+```
+   
+2. Junit
+```
+gradle test
+```
