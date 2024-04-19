@@ -14,6 +14,7 @@
 - [Getting Started](#getting-started)
   - [Script for run](#script-for-run)
   - [Script for testing](#script-for-testing)
+  - [Generate Report](#generate-report)
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -85,5 +86,11 @@ gradle run
 ```
 gradle test
 ```
+
+### Generate Report
+Setelah menjalankan perintah-perintah testing, laporan akan di-generate dan disimpan pada lokasi berikut:
+
+1. **Laporan Pengujian JUnit**: `app\build\reports\tests\test\index.html`
+2. **Laporan Pengujian JaCoCo**: `app\build\reports\jacoco\test\html\index.html`
 
 
