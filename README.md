@@ -1,6 +1,7 @@
 <a name="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url]
+[![GitHub contributors](https://img.shields.io/github/contributors/deasalmaisnaini/KalkulatorTesting.svg)](https://github.com/deasalmaisnaini/KalkulatorTesting/graphs/contributors)
+
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
