@@ -12,6 +12,7 @@
   - [Author](#author)
   - [Tools](#tools)
 - [Getting Started](#getting-started)
+  - - [Instalasi dan Penggunaan](#penggunaan)
   - [Script for run](#script-for-run)
   - [Script for testing](#script-for-testing)
   - [Generate Report](#generate-report)
@@ -71,6 +72,11 @@ Pengujian dilakukan per-method dengan daftar item uji sebagai berikut:
 
 
 ## Getting Started 
+### Penggunaan
+1. Pastikan Anda telah menginstal Java JDK versi 11.
+2. Clone repositori ini ke perangkat.
+3. Buka proyek menggunakan IDE favorit Anda.
+   
 ### Script for run
 ```
 gradle run
