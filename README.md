@@ -65,7 +65,7 @@ Pengujian dilakukan per-method dengan daftar item uji sebagai berikut:
   Java adalah bahasa pemrograman yang digunakan dalam proyek ini. Versi yang digunakan adalah Java 11. [Kunjungi situs Java](https://www.java.com/) untuk informasi lebih lanjut.
 
 * [![JUnit](https://img.shields.io/badge/JUnit-4-green)](https://junit.org/)
-  JUnit digunakan untuk menulis dan menjalankan unit test dalam proyek Java. Versi yang digunakan adalah JUnit 5. [Kunjungi situs JUnit](https://junit.org/) untuk informasi lebih lanjut.
+  JUnit digunakan untuk menulis dan menjalankan unit test dalam proyek Java. Versi yang digunakan adalah JUnit 4. [Kunjungi situs JUnit](https://junit.org/) untuk informasi lebih lanjut.
 
 * [![JaCoCo](https://img.shields.io/badge/JaCoCo-coverage-lightgrey)](https://www.jacoco.org/)
   JaCoCo adalah alat yang digunakan untuk menghasilkan laporan cakupan kode dalam proyek Java. JaCoCo digunakan untuk memastikan bahwa kode teruji dengan baik. [Kunjungi situs JaCoCo](https://www.jacoco.org/) untuk informasi lebih lanjut.
