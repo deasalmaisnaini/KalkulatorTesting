@@ -12,7 +12,7 @@
   - [Author](#author)
   - [Tools](#tools)
 - [Getting Started](#getting-started)
-  - - [Instalasi dan Penggunaan](#penggunaan)
+  - [Penggunaan](#penggunaan)
   - [Script for run](#script-for-run)
   - [Script for testing](#script-for-testing)
   - [Generate Report](#generate-report)
