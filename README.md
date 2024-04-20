@@ -42,7 +42,8 @@ Pengujian dilakukan per-method dengan daftar item uji sebagai berikut:
   - Failed: 0
   - Ignored: 9
   
-   ![Laporan Pengujian Junit](https://drive.google.com/file/d/1n6vS36-tmDaNDwdzbOxkf7sq22NZzwye)
+  ![Laporan Pengujian JUnit](https://drive.google.com/uc?id=1n6vS36-tmDaNDwdzbOxkf7sq22NZzwye)
+
 - Laporan JaCoCo digunakan untuk melihat cakupan pengujian kode dan memastikan kode teruji dengan baik. Cakupan pengujian kode dari laporan JaCoCo:
   - Coverage Instruction: 94%
   - Coverage Branch: 100%
