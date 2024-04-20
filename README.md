@@ -38,11 +38,11 @@ Pengujian dilakukan per-method dengan daftar item uji sebagai berikut:
 ### Pengujian JUnit & JaCoCo
 - Pengujian dilakukan menggunakan JUnit untuk memastikan fungsionalitas kalkulator berjalan dengan benar. Hasil dari pengujian sebagai berikut:
   - Total test: 45
-  - Successful: 45
+  - Successful: 45 (100%)
   - Failed: 0
   - Ignored: 9
   
-    [Laporan Pengujian JUnit](app\build\reports\tests\test\index.html)
+   ![Laporan Pengujian Junit](https://drive.google.com/file/d/1n6vS36-tmDaNDwdzbOxkf7sq22NZzwye/view?usp=sharing)
 - Laporan JaCoCo digunakan untuk melihat cakupan pengujian kode dan memastikan kode teruji dengan baik. Cakupan pengujian kode dari laporan JaCoCo:
   - Coverage Instruction: 94%
   - Coverage Branch: 100%
