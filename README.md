@@ -47,7 +47,7 @@ Pengujian dilakukan per-method dengan daftar item uji sebagai berikut:
   - Coverage Instruction: 94%
   - Coverage Branch: 100%
   
-    [Laporan Pengujian Jacoco](app\build\reports\jacoco\test\html\index.html)
+  ![Laporan Pengujian Jacoco](https://drive.google.com/uc?id=1rNm1Tivz8q4NPLf6NH_0ySo4Hu3Ik53s)
 
   
 ### Author
