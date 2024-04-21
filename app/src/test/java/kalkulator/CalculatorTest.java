@@ -32,7 +32,7 @@ public class CalculatorTest {
 		// TCK 6
 		result = Calculator.add(1.5, -2.25);
 		assertEquals(-0.75, result, 0.0001);
-		
+
 		// TCK 7
 		result = Calculator.add(-1.5, 2.25);
 		assertEquals(0.75, result, 0.0001);
@@ -72,7 +72,6 @@ public class CalculatorTest {
 		result = Calculator.subtract(-2, -3);
 		assertEquals(1, result, 0.0001);
 
-
 		// TCK 16
 		result = Calculator.subtract(1.5, 2.25);
 		assertEquals(-0.75, result, 0.0001);
@@ -80,7 +79,7 @@ public class CalculatorTest {
 		// TCK 17
 		result = Calculator.subtract(1.5, -2.25);
 		assertEquals(3.75, result, 0.0001);
-		
+
 		// TCK 18
 		result = Calculator.subtract(-1.5, 2.25);
 		assertEquals(-3.75, result, 0.0001);
@@ -160,7 +159,7 @@ public class CalculatorTest {
 		assertEquals("Pembagi tidak boleh nol", exception.getMessage());
 
 	}
-	
+
 	@Test
 	public void testDivide() {
 		// TCK 36
@@ -206,13 +205,10 @@ public class CalculatorTest {
 		// TCK 46
 		result = Calculator.divide(-6, -0.6);
 		assertEquals(10, result, 0.0001);
-		
+
 		// TCK 47
 		result = Calculator.divide(0, 5);
 		assertEquals(0, result, 0.0001);
 	}
-
-	
-	
 
 }

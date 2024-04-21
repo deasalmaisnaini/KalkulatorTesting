@@ -40,6 +40,20 @@ tasks.register("author") {
     }
 }
 
+test {
+    //Untuk testing class calculator
+    //include '**/CalculatorTest.class'
+
+    //Untuk testing class Computation 
+    //include '**/ComputationTest.class'
+
+    //Untuk testing class Main
+    //include '**/MainTest.class'
+
+    //Untuk testing class Validator
+    //include '**/ValidatorTest.class'
+}
+
 
 jacocoTestReport {
     reports {
