@@ -51,7 +51,7 @@ Proyek ini adalah sebuah aplikasi kalkulator sederhana yang memungkinkan penggun
 | Method validateOperator| Pengujian validasi operator adalah tanda +, -, * atau /.                                                                             |
 | Method validateInput  | Pengujian validasi terhadap setiap input agar harus diisi.                                                                          |
 | Method compute        | - Pengujian hasil dari pemanggilan method penambahan.<br>- Pengujian hasil dari pemanggilan method pengurangan.<br>- Pengujian hasil dari pemanggilan method perkalian.<br>- Pengujian hasil dari pemanggilan method pembagian. <br>- Pengujian dengan operator yang tidak sesuai dengan ketentuan
-|
+
 
 
 ### Pengujian JUnit & JaCoCo
