@@ -15,6 +15,7 @@
   - [Penggunaan](#penggunaan)
   - [Script for run](#script-for-run)
   - [Script for testing](#script-for-testing)
+  - [Create Test Case](#create-test-case)
   - [Generate Report](#generate-report)
 
 <!-- ABOUT THE PROJECT -->
@@ -100,4 +101,11 @@ Setelah menjalankan perintah-perintah testing, laporan akan di-generate dan disi
 1. **Laporan Pengujian JUnit**: `app\build\reports\tests\test\index.html`
 2. **Laporan Pengujian JaCoCo**: `app\build\reports\jacoco\test\html\index.html`
 
+### CREATE TEST CASE
+1. **Buat file pengujian pada path**: `app\src\test\java\kalkulator`
+2. **Buat method dengan anotasi @Test**
+3. **Siapkan Test Data dan juga expected result**
+4. **Panggil method yang akan diuji**
+5. **Simpan hasil dari method yang diuji**
+6. **Bandingkan hasil dari actual result dengan expected result**
 
