@@ -24,7 +24,7 @@ Proyek ini adalah sebuah aplikasi kalkulator sederhana yang memungkinkan penggun
 
 ### Method Aplikasi
 Pengujian dilakukan per-method dengan daftar item uji sebagai berikut:
-| No. | Nama Class | Nama Method |
+| No. | Nama Class | Nama Method | Jumlah Test Case
 | :---: | :--------- | :----------- |
 | 1 | MainApp | Main |
 | 2 | Calculator | add |
@@ -35,6 +35,24 @@ Pengujian dilakukan per-method dengan daftar item uji sebagai berikut:
 |   |         | validateOperator |
 |   |         | validateInput |
 | 4 | Computation | compute |
+
+### Tabel Objective Testing
+
+| Item Pengujian        | Objective Testing                                                                                                                  |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| Method Main           | - Pengujian perhitungan dengan Operand berupa angka dan Operasi yang sesuai dengan ketentuan.<br>- Pengujian dengan Operand pertama bukan angka.<br>- Pengujian dengan Operand pertama tidak diisi. <br>- Pengujian dengan Operand pertama kurang dari - 32768 dan lebih dari 32767. <br>- Pengujian dengan Operand kedua bukan angka. <br>-Pengujian dengan Operand kedua tidak diisi. <br>-Pengujian dengan Operand kedua kurang dari - 32768 dan lebih dari 32767 <br>- Pengujian Operator tidak diisi. <br>- Pengujian Operator tidak sesuai dengan ketentuan yaitu bukan tanda tambah, kurang, kali atau bagi		
+![image](https://github.com/deasalmaisnaini/KalkulatorTesting/assets/142873545/86c87bc5-7690-4644-8b23-01730a389795)
+ |
+| Method add            | Pengujian operasi penambahan.                                                                                                      |
+| Method subtract       | Pengujian operasi pengurangan.                                                                                                      |
+| Method multiply       | Pengujian operasi perkalian.                                                                                                        |
+| Method divide         | - Pengujian operasi pembagian dengan pembagi 0.<br>- Pengujian operasi pembagian dengan pembagi bukan 0.                          |
+| Method validateOperand| Pengujian validasi terhadap operand kurang dari -32768 dan lebih dari 32767.                                                         |
+| Method validateOperator| Pengujian validasi operator adalah tanda +, -, * atau /.                                                                             |
+| Method validateInput  | Pengujian validasi terhadap setiap input agar harus diisi.                                                                          |
+| Method compute        | - Pengujian hasil dari pemanggilan method penambahan.<br>- Pengujian hasil dari pemanggilan method pengurangan.<br>- Pengujian hasil dari pemanggilan method perkalian.<br>- Pengujian hasil dari pemanggilan method pembagian. <br>- Pengujian dengan operator yang tidak sesuai dengan ketentuan
+|
+
 
 ### Pengujian JUnit & JaCoCo
 - Pengujian dilakukan menggunakan JUnit untuk memastikan fungsionalitas kalkulator berjalan dengan benar. Hasil dari pengujian sebagai berikut:
