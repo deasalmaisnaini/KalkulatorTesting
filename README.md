@@ -75,9 +75,14 @@ Pengujian dilakukan per-method dengan daftar item uji sebagai berikut:
 
 ## Getting Started 
 ### Penggunaan
-1. Pastikan Anda telah menginstal Java JDK versi 11.
-2. Clone repositori ini ke perangkat.
-3. Buka proyek menggunakan IDE favorit Anda.
+1. Pastikan Anda telah menginstal Java JDK versi 11 dan telah mendownload gradle versi 6.7.1.
+2. Jika belum menginstall java dan gradle:
+   -  Download Java : `https://www.oracle.com/id/java/technologies/javase/jdk11-archive-downloads.html`
+   -  Download Gradle : `https://gradle.org/releases/
+   -  Tambahkan Gradle dan Java pada system variable
+   -  Periksa dengan mengetikan java --version untuk java dan gradle --version untuk gradle
+4. Clone repositori ini ke perangkat.
+5. Buka proyek menggunakan IDE.
    
 ### Script for run
 ```
