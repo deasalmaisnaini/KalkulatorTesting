@@ -107,10 +107,10 @@ Setelah menjalankan perintah-perintah testing, laporan akan di-generate dan disi
 2. **Laporan Pengujian JaCoCo**: `app\build\reports\jacoco\test\html\index.html`
 
 ### CREATE TEST CASE
-1. **Buat file pengujian pada path**: `app\src\test\java\kalkulator`
-2. **Buat method dengan anotasi @Test**
-3. **Siapkan Test Data dan juga expected result**
-4. **Panggil method yang akan diuji**
-5. **Simpan hasil dari method yang diuji**
-6. **Bandingkan hasil dari actual result dengan expected result**
+1. Buat file pengujian pada path: `app\src\test\java\kalkulator`
+2. Buat method dengan anotasi **@Test**
+3. Siapkan Test Data dan juga expected result
+4. Panggil method yang akan diuji
+5. Simpan hasil dari method yang diuji**
+6. Bandingkan hasil dari actual result dengan expected result
 
