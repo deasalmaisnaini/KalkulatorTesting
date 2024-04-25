@@ -7,7 +7,8 @@
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
 - [About The Project](#about-the-project)
-  - [Method Aplikasi](#method-aplikasi)
+  - [Tabel Item Pengujian](#item-pengujian)
+  - [Tabel Objective Testing](#objective-testing)
   - [Pengujian JUnit \& JaCoCo](#pengujian-junit--jacoco)
   - [Author](#author)
   - [Tools](#tools)
@@ -22,19 +23,20 @@
 ## About The Project
 Proyek ini adalah sebuah aplikasi kalkulator sederhana yang memungkinkan pengguna untuk melakukan operasi matematika dasar (tambah, kurang, kali, bagi) pada dua buah operand. Aplikasi ini dibangun menggunakan bahasa pemrograman Java dan manajemen proyek menggunakan Gradle. Pengujian dilakukan dengan menggunakan framework JUnit dan pengukuran cakupan pengujian dilakukan dengan JaCoCo.
 
-### Method Aplikasi
-Pengujian dilakukan per-method dengan daftar item uji sebagai berikut:
-| No. | Nama Class | Nama Method | Jumlah Test Case
-| :---: | :--------- | :----------- |
-| 1 | MainApp | Main |
-| 2 | Calculator | add |
-|   |         | subtract |
-|   |         | multiply |
-|   |         | divide |
-| 3 | Validator | validateOperand |
-|   |         | validateOperator |
-|   |         | validateInput |
-| 4 | Computation | compute |
+### Tabel Item Pengujian
+
+| **No.** | **Nama Class** | **Nama Method** | **Jumlah Test Case** |
+|:-------:|:--------------:|:---------------:|:--------------------:|
+|    1    |    MainApp     |      Main       |          18          |
+|    2    |   Calculator   |       add       |          11          |
+|         |                |     subtract    |          11          |
+|         |                |     multiply    |          11          |
+|         |                |      divide     |          14          |
+|    3    |    Validator   | validateOperand |           4          |
+|         |                | validateOperator|           7          |
+|         |                |  validateInput  |           6          |
+|    4    |  Computation   |     compute     |           5          |
+
 
 ### Tabel Objective Testing
 
