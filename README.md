@@ -1,134 +1,128 @@
-<a name="readme-top"></a>
+# Proyek Pengujian API
 
-[![GitHub contributors](https://img.shields.io/github/contributors/deasalmaisnaini/KalkulatorTesting.svg)](https://github.com/deasalmaisnaini/KalkulatorTesting/graphs/contributors)
+Selamat datang di Proyek Pengujian API kami! Proyek ini difokuskan pada pengujian website DummyAPI menggunakan Java 11, Maven sebagai alat pengelolaan proyek, dan TestNG untuk memberikan laporan dan menjalankan pengujian.
 
+## Daftar Isi
+- [Tentang Proyek](#tentang-proyek)
+- [Memulai](#memulai)
+  - [Persyaratan](#persyaratan)
+  - [Instalasi](#instalasi)
+  - [Menjalankan Pengujian](#menjalankan-pengujian)
+- [Kontributor](#kontributor)
+- [Alat dan Teknologi](#alat-dan-teknologi)
+- [Kontak](#kontak)
 
-<!-- TABLE OF CONTENTS -->
-## Table of Contents
-- [Table of Contents](#table-of-contents)
-- [About The Project](#about-the-project)
-  - [Tabel Item Pengujian](#item-pengujian)
-  - [Tabel Objective Testing](#objective-testing)
-  - [Pengujian JUnit \& JaCoCo](#pengujian-junit--jacoco)
-  - [Author](#author)
-  - [Tools](#tools)
-- [Getting Started](#getting-started)
-  - [Penggunaan](#penggunaan)
-  - [Script for run](#script-for-run)
-  - [Script for testing](#script-for-testing)
-  - [Create Test Case](#create-test-case)
-  - [Generate Report](#generate-report)
+## Tentang Proyek
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-Proyek ini adalah sebuah aplikasi kalkulator sederhana yang memungkinkan pengguna untuk melakukan operasi matematika dasar (tambah, kurang, kali, bagi) pada dua buah operand. Aplikasi ini dibangun menggunakan bahasa pemrograman Java dan manajemen proyek menggunakan Gradle. Pengujian dilakukan dengan menggunakan framework JUnit dan pengukuran cakupan pengujian dilakukan dengan JaCoCo.
+Proyek kami bertujuan untuk melakukan pengujian terhadap website Dummy API. Kami menggunakan Java 11 untuk menulis skrip otomasi pengujian, Maven untuk mengelola dependensi dan membangun proyek, serta TestNG sebagai kerangka pengujian untuk menjalankan pengujian terhadap berbagai endpoint API.
 
-### Tabel Item Pengujian
+### Struktur Proyek
+- `pom.xml` adalah file konfigurasi Maven yang mengelola dependensi dan build proyek.
+- `src/main/java` adalah direktori tempat kode sumber utama proyek berada.
+- `src/main/resources` adalah direktori untuk menyimpan berkas sumber daya proyek, misalnya konfigurasi.
+- `src/test/java` adalah direktori tempat kode sumber untuk pengujian berada.
+- `src/test/resources` adalah direktori untuk menyimpan berkas sumber daya yang digunakan dalam pengujian.
 
-| **No.** | **Nama Class** | **Nama Method** | **Jumlah Test Case** |
-|:-------:|:--------------:|:---------------:|:--------------------:|
-|    1    |    MainApp     |      Main       |          18          |
-|    2    |   Calculator   |       add       |          11          |
-|         |                |     subtract    |          11          |
-|         |                |     multiply    |          11          |
-|         |                |      divide     |          14          |
-|    3    |    Validator   | validateOperand |           4          |
-|         |                | validateOperator|           7          |
-|         |                |  validateInput  |           6          |
-|    4    |  Computation   |     compute     |           5          |
+## Memulai
 
+### Persyaratan
+Sebelum memulai, pastikan Anda telah menginstal hal-hal berikut:
+- Java JDK 11: [Unduh Java](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+- Maven: [Unduh Maven](https://maven.apache.org/download.cgi)
+- Memiliki app-id yang diperoleh dari Web DummyAPI
 
-### Tabel Objective Testing
+### Instalasi
+1. Clone repositori ini.
+2. Buka proyek menggunakan IDE.
 
-| Item Pengujian        | Objective Testing                                                                                                                  |
-|-----------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| Method Main           | - Pengujian perhitungan dengan Operand berupa angka dan Operasi yang sesuai dengan ketentuan.<br>- Pengujian dengan Operand pertama bukan angka.<br>- Pengujian dengan Operand pertama tidak diisi. <br>- Pengujian dengan Operand pertama kurang dari - 32768 dan lebih dari 32767. <br>- Pengujian dengan Operand kedua bukan angka. <br>- Pengujian dengan Operand kedua tidak diisi. <br>- Pengujian dengan Operand kedua kurang dari - 32768 dan lebih dari 32767 <br>- Pengujian Operator tidak diisi. <br>- Pengujian Operator tidak sesuai dengan ketentuan yaitu bukan tanda tambah, kurang, kali atau bagi|
-| Method add            | Pengujian operasi penambahan.                                                                                                      |
-| Method subtract       | Pengujian operasi pengurangan.                                                                                                      |
-| Method multiply       | Pengujian operasi perkalian.                                                                                                        |
-| Method divide         | - Pengujian operasi pembagian dengan pembagi 0.<br>- Pengujian operasi pembagian dengan pembagi bukan 0.                          |
-| Method validateOperand| Pengujian validasi terhadap operand kurang dari -32768 dan lebih dari 32767.                                                         |
-| Method validateOperator| Pengujian validasi operator adalah tanda +, -, * atau /.                                                                             |
-| Method validateInput  | Pengujian validasi terhadap setiap input agar harus diisi.                                                                          |
-| Method compute        | - Pengujian hasil dari pemanggilan method penambahan.<br>- Pengujian hasil dari pemanggilan method pengurangan.<br>- Pengujian hasil dari pemanggilan method perkalian.<br>- Pengujian hasil dari pemanggilan method pembagian. <br>- Pengujian dengan operator yang tidak sesuai dengan ketentuan
+### Menjalankan Pengujian
+Untuk menjalankan pengujian terhadap Dummy API, ikuti langkah-langkah berikut:
 
+1. Buka terminal atau command prompt, dan navigasi ke direktori proyek.
+2. Ubah app-id pada file test menggunakan app-id yang diperoleh dari web DummyAPI.
+3. Jalankan perintah Maven berikut untuk menjalankan semua kasus pengujian: `mvn test`
+4. Setelah pengujian berhasil dieksekusi, Anda dapat melihat laporan pengujian di direktori `target/surefire-reports`.
 
+### Menjalankan Pengujian dengan Rest Assured
 
-### Pengujian JUnit & JaCoCo
-- Pengujian dilakukan menggunakan JUnit untuk memastikan fungsionalitas kalkulator berjalan dengan benar. Hasil dari pengujian sebagai berikut:
-  - Total test: 45
-  - Successful: 45 (100%)
-  - Failed: 0
-  - Ignored: 9
-  
-  ![Laporan Pengujian JUnit](https://drive.google.com/uc?id=1n6vS36-tmDaNDwdzbOxkf7sq22NZzwye)
+Pengujian API menggunakan Rest Assured melibatkan tiga konsep utama:
+- `given`: Untuk menyiapkan permintaan dengan mengatur header, parameter, dan body.
+- `when`: Untuk menentukan aksi pada permintaan, seperti GET, POST, PUT, atau DELETE.
+- `then`: Untuk memeriksa respons yang diterima dari permintaan, seperti status code dan isi body.
 
-- Laporan JaCoCo digunakan untuk melihat cakupan pengujian kode dan memastikan kode teruji dengan baik. Cakupan pengujian kode dari laporan JaCoCo:
-  - Coverage Instruction: 94%
-  - Coverage Branch: 100%
-  
-  ![Laporan Pengujian Jacoco](https://drive.google.com/uc?id=1rNm1Tivz8q4NPLf6NH_0ySo4Hu3Ik53s)
+Contoh skrip pengujian dengan Rest Assured:
 
-  
-### Author
-- Dea Salma Isnaini (211524038)
-  
-- Falia Davina Gustaman (211524041)
-  
-- Syifa Khairina (211524063)
-
-### Tools
-* [![Gradle](https://img.shields.io/badge/Gradle-6.7.1-blue)](https://gradle.org/)
-  Gradle digunakan sebagai build tool untuk mengelola proyek Java secara efisien. Versi yang digunakan adalah 6.7.1. [Kunjungi situs Gradle](https://gradle.org/) untuk informasi lebih lanjut.
-
-* [![Java](https://img.shields.io/badge/Java-11-red)](https://www.java.com/)
-  Java adalah bahasa pemrograman yang digunakan dalam proyek ini. Versi yang digunakan adalah Java 11. [Kunjungi situs Java](https://www.java.com/) untuk informasi lebih lanjut.
-
-* [![JUnit](https://img.shields.io/badge/JUnit-4-green)](https://junit.org/)
-  JUnit digunakan untuk menulis dan menjalankan unit test dalam proyek Java. Versi yang digunakan adalah JUnit 4. [Kunjungi situs JUnit](https://junit.org/) untuk informasi lebih lanjut.
-
-* [![JaCoCo](https://img.shields.io/badge/JaCoCo-coverage-lightgrey)](https://www.jacoco.org/)
-  JaCoCo adalah alat yang digunakan untuk menghasilkan laporan cakupan kode dalam proyek Java. JaCoCo digunakan untuk memastikan bahwa kode teruji dengan baik. [Kunjungi situs JaCoCo](https://www.jacoco.org/) untuk informasi lebih lanjut.
-
-
-## Getting Started 
-### Penggunaan
-1. Pastikan Anda telah menginstal Java JDK versi 11 dan telah mendownload gradle versi 6.7.1.
-2. Jika belum menginstall java dan gradle:
-   -  Download Java : `https://www.oracle.com/id/java/technologies/javase/jdk11-archive-downloads.html`
-   -  Download Gradle : `https://gradle.org/releases/`
-   -  Tambahkan Gradle dan Java pada system variable
-   -  Periksa dengan mengetikan java --version untuk java dan gradle --version untuk gradle
-4. Clone repositori ini ke perangkat.
-5. Buka proyek menggunakan IDE.
-   
-### Script for run
-```
-gradle run
+```java
+given()
+    .header("Content-Type", "application/json")
+    .body("{ \"key\": \"value\" }")
+.when()
+    .post("/api/endpoint")
+.then()
+    .statusCode(200)
+    .body("status", equalTo("success")); 
 ```
 
-### Script for testing
-1. Jacoco
-```
-./gradlew test jacocoTestReport
-```
-   
-2. Junit
-```
-gradle test
-```
+## Laporan Pengujian
 
-### Generate Report
-Setelah menjalankan perintah-perintah testing, laporan akan di-generate dan disimpan pada lokasi berikut:
+### Create User
+Terdapat 54 test case pada operasi pembuatan pengguna (create user), dimana 8 test case mengalami kegagalan.
 
-1. **Laporan Pengujian JUnit**: `app\build\reports\tests\test\index.html`
-2. **Laporan Pengujian JaCoCo**: `app\build\reports\jacoco\test\html\index.html`
+### Update User
+Terdapat 29 test case pada operasi pembaruan pengguna (update user), dimana 16 test case mengalami kegagalan.
 
-### CREATE TEST CASE
-1. Buat file pengujian pada path: `app\src\test\java\kalkulator`
-2. Buat method dengan anotasi **@Test**
-3. Siapkan Test Data dan juga expected result
-4. Panggil method yang akan diuji
-5. Simpan hasil dari method yang diuji**
-6. Bandingkan hasil dari actual result dengan expected result
+### Get User & Delete User
+Terdapat 6 test case pada operasi pengambilan pengguna (get user) dan penghapusan pengguna (delete user), dimana keseluruhan test case berhasil dilalui.
 
+## Kontributor
+
+Proyek ini dikembangkan dan dikelola oleh kontributor berikut:
+- [Dea Salma Isnaini](https://github.com/deasalmaisnaini)
+- [Falia Davina Gustaman](https://github.com/faliadavina)
+- [Syifa Khairina](https://github.com/syifakhairina)
+
+## Alat dan Teknologi
+
+Alat yang digunakan dalam proyek ini meliputi:
+
+- [![Java 11](https://img.shields.io/badge/Java-11-red)](https://www.java.com/)
+- [![Maven](https://img.shields.io/badge/Maven-Latest-blue)](https://maven.apache.org/)
+- [![TestNG](https://img.shields.io/badge/TestNG-Latest-green)](https://testng.org/)
+
+## Dependensi Proyek
+```
+<dependencies>
+    <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+    <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>5.4.0</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>6.14.3</version>
+        <scope>test</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>1.7.5</version>
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>1.7.5</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>1.9.19</version>
+    </dependency>
+</dependencies>
+```
